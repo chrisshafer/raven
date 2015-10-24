@@ -1,0 +1,115 @@
+@import "colors";
+@import "mixins";
+
+
+$indicator-text: #FFFFFF;
+
+@mixin indicated-input($color){
+  input {
+    border-bottom: 2px solid $color;
+    &:focus {
+      outline: 0;
+      border-bottom: 2px solid darken($color,5%);
+    }
+  }
+}
+@mixin indicated-pillbox($color){
+  border: 2px solid $color;
+  label{
+    background-color: $color;
+    color: $indicator-text;
+  }
+  input{
+    &:focus{
+      outline: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.input-group{
+  margin-top: 10px;
+  label{
+    display: block;
+    font-size: 14px;
+  }
+  input{
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid $card-background;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 2px;
+    line-height: 24px;
+    color: $body-font;
+    margin-bottom: 25px;
+    &:focus{
+      outline: 0;
+      border-bottom: 2px solid $information;
+    }
+    @include placeholder{
+      color: darken($body-font,15%);
+    }
+  }
+
+  &.positive{
+    @include indicated-input($positive);
+  }
+  &.negative{
+    @include indicated-input($negative);
+  }
+  &.information{
+    @include indicated-input($information);
+  }
+  &.neutral{
+    @include indicated-input($neutral);
+  }
+
+  &.pillbox{ // somethings fucky
+    $pill-height: 30px;
+    $pill-radius: 5px;
+    height: $pill-height;
+    background-color: darken($card-background, 11%) ;
+    border-radius: $pill-radius;
+    border: 2px solid $background;
+    margin: 10px 5px 10px 5px;
+    label{
+      display: inline-block;
+      width: auto;
+      background-color: $background;
+      border-top-left-radius: $pill-radius - 4px;
+      border-bottom-left-radius: $pill-radius - 4px;
+      border-bottom: none;
+      line-height: $pill-height;
+      padding: 0px 10px 0px 7px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    input{
+      margin-left: -5px;
+      display: inline-block;
+      width: auto;
+      line-height: $pill-height;
+      padding: 0px 0px 0px 5px;
+      border-top-right-radius: $pill-radius;
+      border-bottom-right-radius: $pill-radius;
+      border-bottom: none;
+
+    }
+    &.positive{
+      @include indicated-pillbox($positive);
+    }
+    &.negative{
+      @include indicated-pillbox($negative);
+    }
+    &.information{
+      @include indicated-pillbox($information);
+    }
+    &.neutral{
+      @include indicated-pillbox($neutral);
+    }
+  }
+}

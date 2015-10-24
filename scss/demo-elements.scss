@@ -1,0 +1,38 @@
+@import "colors";
+.color-swatch{
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 9px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+
+  &.inverse-font{
+    color: $background;
+  }
+
+  &.positive{
+    background-color: $positive;
+  }
+  &.negative{
+    background-color: $negative;
+  }
+  &.information{
+    background-color: $information;
+  }
+  &.neutral{
+    background-color: $neutral;
+  }
+
+  &.background-color{
+    background-color: $background;
+  }
+  &.card-color{
+    background-color: $card-background;
+  }
+  &.font-color{
+    background-color: $body-font;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/resources/css/main.css"/>
+</head>
+<body>
+
+    <div class="container centered narrow">
+        <h1>Raven Framework</h1>
+        <p>
+            Raven is a responsive framework designed to provide a flatter and eye friendly experience.
+        </p>
+        <h2>Headings</h2>
+        <div class="card inverse">
+            <h1>Heading</h1>
+            <h2>Heading</h2>
+            <h3>Heading</h3>
+            <h4>Heading</h4>
+            <h5>Heading</h5>
+        </div>
+
+        <h2>Cards</h2>
+        <div class="card information">
+            <p>
+                Cards are a good way to indicate separation on the page,
+                grouping similar pieces of functionality and content.
+            </p>
+        </div>
+        <div class="card inverse positive">
+            <span class="title">Inverse Card</span>
+            <p>
+                You can decorate them, and provide a title.
+            </p>
+        </div>
+        <div class="card inverse negative">
+            <span class="title">Error card</span>
+            <p>
+                You can subtly indicate status of the information displayed on the card.
+            </p>
+        </div>
+
+        <h2>Color Palette</h2>
+        <div class="card information">
+            <p>
+                Raven comes with a default color palette, obviously named "raven",
+                which can be customized by modifying the colors.scss file.
+            </p>
+        </div>
+
+        <div class="card inverse">
+            <span class="title">Base Colors</span>
+            <div class="color-swatch background-color">$background</div>
+            <div class="color-swatch card-color">$card</div>
+            <div class="color-swatch font-color inverse-font">$body-font</div>
+        </div>
+        <div class="card inverse">
+            <span class="title">Indicator Colors</span>
+            <div class="color-swatch positive">$positive</div>
+            <div class="color-swatch negative">$negative</div>
+            <div class="color-swatch neutral">$neutral</div>
+            <div class="color-swatch information">$information</div>
+        </div>
+
+
+        <h2>Tables</h2>
+        <div class="card information">
+            <p>
+                Raven provides multiple styles of responsive tables.
+            </p>
+        </div>
+        <div class="card inverse">
+            <span class="title">Default</span>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th><th>Algorithim</th><th>Best Case</th><th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Quicksort</td><td>O(n log(n))</td><td>O(n log(n))</td></tr>
+                        <tr><td>2</td><td>Heapsort</td><td>O(n log(n))</td><td>O(n log(n))</td></tr>
+                        <tr><td>3</td><td>Bubble Sort</td><td>O(n)</td><td>O(n^2)</td></tr>
+                        <tr><td>4</td><td>Insertion Sort</td><td>O(n)</td><td>O(n^2)</td></tr>
+                        <tr><td>5</td><td>Selection Sort</td><td>O(n^2)</td><td>O(n^2)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="card inverse">
+            <span class="title">Bordered</span>
+            <div class="table-responsive">
+                <table class="bordered">
+                    <thead>
+                    <tr>
+                        <th>#</th><th>Algorithim</th><th>Best Case</th><th>Average</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>1</td><td>Quicksort</td><td>O(n log(n))</td><td>O(n log(n))</td></tr>
+                    <tr><td>2</td><td>Heapsort</td><td>O(n log(n))</td><td>O(n log(n))</td></tr>
+                    <tr><td>3</td><td>Bubble Sort</td><td>O(n)</td><td>O(n^2)</td></tr>
+                    <tr><td>4</td><td>Insertion Sort</td><td>O(n)</td><td>O(n^2)</td></tr>
+                    <tr><td>5</td><td>Selection Sort</td><td>O(n^2)</td><td>O(n^2)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2>Buttons</h2>
+        <div class="card information">
+            <p>
+                Raven provides many different styles of buttons that can be customized in the buttons.scss file.
+                If you haven't noticed, raven takes a soft approach to edges, this is exaggerated in the default pill-shaped button style.
+            </p>
+        </div>
+        <div class="card inverse">
+            <button class="large">Large</button>
+            <button>Default</button>
+            <button class="small">Small</button>
+            <br/>
+            <button class="information">information</button>
+            <button class="negative" >negative</button>
+            <button class="positive">positive</button>
+            <button class="neutral">neutral</button>
+            <br>
+            <button class="neutral large rounded">mix</button>
+            <button class="small rounded">and</button>
+            <button class="positive large">match</button>
+            <button class="information rounded">button</button>
+            <button>styles</button>
+        </div>
+
+        <h2>Input</h2>
+        <div class="card information">
+            <p>
+                Raven knows everyone likes forms, so there are many options for input
+            </p>
+        </div>
+        <div class="card inverse">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Alan" />
+            </div>
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Turing"/>
+            </div>
+            <div class="input-group negative">
+                <label>Invalid Input</label>
+                <input type="text" placeholder="Hades"/>
+            </div>
+            <div class="input-group positive">
+                <label>Valid Input</label>
+                <input type="text" placeholder="Zeus"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="input-group pillbox">
+                <label>First Name</label>
+                <input type="text" placeholder="Alan" />
+            </div>
+            <div class="input-group pillbox">
+                <label>Last Name</label>
+                <input type="text" placeholder="Turing"/>
+            </div>
+            <div class="input-group pillbox information">
+                <label>Selected Input</label>
+                <input type="text" placeholder="Hades"/>
+            </div>
+            <div class="input-group pillbox negative">
+                <label>Invalid Input</label>
+                <input type="text" placeholder="Hades"/>
+            </div>
+            <div class="input-group pillbox positive">
+                <label>Valid Input</label>
+                <input type="text" placeholder="Zeus"/>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

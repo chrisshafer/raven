@@ -1,0 +1,69 @@
+@import "colors";
+@import "mixins";
+
+$default-border: $body-font;
+$indicator-button: #FFFFFF;
+
+@mixin colored-button($color){
+  border-color: $color;
+  background-color: $color;
+  color:$indicator-button;
+  &:hover{
+    background-color: darken($color,8%);
+    border-color: darken($color,8%);
+  }
+}
+
+button{
+  background-color: $button-color;
+  border: 1px solid $body-font;
+  border-radius: 100px;
+  padding: 0px 14px 0px 14px;
+  margin: 5px;
+  font-size: 14px;
+  line-height: 28px;
+  color: $body-font;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: 0;
+  }
+  &:hover{
+    background-color: darken($button-color,5%);
+    cursor: pointer;
+  }
+
+  &.rounded{
+    border-radius: 5px;
+  }
+
+  &.large{
+    border: 2px solid $body-font;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  &.small{
+    border: 1px solid $body-font;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &.information{
+    @include colored-button($information);
+  }
+
+  &.negative{
+    @include colored-button($negative);
+  }
+
+  &.positive{
+    @include colored-button($positive);
+  }
+
+  &.neutral{
+    @include colored-button($neutral);
+  }
+
+}
+

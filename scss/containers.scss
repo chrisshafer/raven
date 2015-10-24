@@ -1,0 +1,16 @@
+@import "mixins";
+
+.container{
+  width: 100%;
+  margin-bottom: 50px;
+  &.centered{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.narrow{
+    width: 48em;
+  }
+  &.wide{
+    width: 64em;
+  }
+}
