@@ -1,4 +1,5 @@
 @import "colors";
+
 .color-swatch{
   width: 140px;
   height: 140px;
@@ -35,4 +36,9 @@
   &.font-color{
     background-color: $body-font;
   }
+}
+
+.min-menu-example{
+  padding-left:75px !important;
+  height: 200px;
 }

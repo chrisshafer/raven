@@ -6,7 +6,7 @@ $menu-width: 60px;
   position: fixed;
   top: 0px; bottom: 0px; left: 0px;
   width: $menu-width;
-  background-color: $menu-bar;
+  background-color: transparent;
 
   ul{
     list-style: none;
@@ -32,10 +32,14 @@ $menu-width: 60px;
         span{
           color: #ffffff;
         }
-        border-left: 5px solid #2FAEEE;
+        border-left: 5px solid $information;
         padding-left: 10px;
       }
     }
+  }
+
+  &.contained{
+    position: absolute;
   }
 
 }
