@@ -6,7 +6,7 @@
   border-radius: 5px;
   display: inline-block;
   margin: 9px;
-  color: white;
+  color: #f4f4f4;
   font-weight: bold;
   padding: 10px;
 
@@ -38,7 +38,11 @@
   }
 }
 
-.min-menu-example{
+.min-menu-vertical-example{
   padding-left:75px !important;
   height: 200px;
+}
+
+.min-menu-horizontal-example{
+  padding-top:45px !important;
 }

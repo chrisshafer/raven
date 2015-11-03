@@ -16,6 +16,9 @@
     font-weight: bold;
   }
 
+  &.plain{
+    background-color: $background ;
+  }
   &.inverse{
     background-color: darken($card-background, 11%) ;
   }
