@@ -35,6 +35,12 @@ gulp.task("scss", function() {
         .pipe(gulp.dest(developmentDir + "/resources/css"));
 });
 
+gulp.task("resources", function() {
+    return gulp.src('./resources/**/*.css')
+        .pipe(plugins.sass().on('error', plugins.sass.logError))
+        .pipe(gulp.dest(developmentDir + "/resources/css"));
+});
+
 gulp.task("font", function() {
     return gulp.src(['**/*.woff','**/*.ttf','**/*.woff2'])
         .pipe(plugins.rename({dirname: ''}))
@@ -47,6 +53,6 @@ gulp.task("copy", function() {
 });
 
 
-gulp.task('build', plugins.sequence(["copy", "scss", "html", "font"]));
-gulp.task('develop', plugins.sequence(["copy", "scss", "html", "font"], "preview", "watch"));
+gulp.task('build', plugins.sequence(["copy", "scss", "html", "font","resources"]));
+gulp.task('develop', plugins.sequence(["copy", "scss", "html", "font","resources"], "preview", "watch"));
 gulp.task('default', ['build']);

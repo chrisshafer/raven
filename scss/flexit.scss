@@ -1,0 +1,16 @@
+$order-max: 12;
+
+.flexibrow {
+  display: flex;
+  flex-direction: row;
+
+  .column {
+    flex-grow: 2;
+    align-items: stretch;
+
+    @for $i from 1 to $order-max {
+      .order-#{$i} { order: $i }
+    }
+  }
+
+}

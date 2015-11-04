@@ -46,3 +46,20 @@
 .min-menu-horizontal-example{
   padding-top:45px !important;
 }
+.demo-flex{
+  height: 20px;
+  border: 2px solid $card-background;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+}
+.browser-demo{
+  .column {
+    img {
+      padding-top: 5px;
+      display: inherit;
+      height: 100px;
+      margin: auto;
+    }
+  }
+}
