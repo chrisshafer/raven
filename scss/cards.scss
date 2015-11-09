@@ -16,6 +16,13 @@
     font-weight: bold;
   }
 
+  &.thin{
+    padding: 10px 10px 10px 10px;
+    p {
+      margin: 0;
+    }
+
+  }
   &.plain{
     background-color: $background ;
   }

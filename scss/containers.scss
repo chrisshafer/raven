@@ -8,9 +8,9 @@
     margin-right: auto;
   }
   &.narrow{
-    width: 48em;
+    max-width: 48em;
   }
   &.wide{
-    width: 64em;
+    max-width: 64em;
   }
 }

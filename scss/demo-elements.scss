@@ -47,7 +47,14 @@
   padding-top:45px !important;
 }
 .demo-flex{
-  height: 20px;
+  min-height: 20px;
+  border: 2px solid $card-background;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+}
+.demo-strict{
+  min-height: 20px;
   border: 2px solid $card-background;
   border-radius: 5px;
   padding: 5px;
