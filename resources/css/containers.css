@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  margin-bottom: 50px;
+  max-width: 64em; }
+  .container.centered {
+    margin-left: auto;
+    margin-right: auto; }
+  .container.narrow {
+    max-width: 48em; }
+  .container.wide {
+    max-width: 82.5em; }

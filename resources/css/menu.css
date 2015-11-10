@@ -1,0 +1,52 @@
+.minimal-menu, .vertical-mini-menu, .horizontal-mini-menu {
+  background-color: transparent; }
+  .minimal-menu ul, .vertical-mini-menu ul, .horizontal-mini-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px 0px 0px 0px; }
+    .minimal-menu ul li, .vertical-mini-menu ul li, .horizontal-mini-menu ul li {
+      display: inline-block;
+      padding: 10px 15px 10px 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center; }
+      .minimal-menu ul li .fa, .vertical-mini-menu ul li .fa, .horizontal-mini-menu ul li .fa {
+        text-align: center;
+        width: 30px; }
+      .minimal-menu ul li:hover, .vertical-mini-menu ul li:hover, .horizontal-mini-menu ul li:hover {
+        color: #f4f4f4; }
+      .minimal-menu ul li.current, .vertical-mini-menu ul li.current, .horizontal-mini-menu ul li.current {
+        color: #f4f4f4; }
+        .minimal-menu ul li.current span, .vertical-mini-menu ul li.current span, .horizontal-mini-menu ul li.current span {
+          color: #f4f4f4; }
+
+.vertical-mini-menu {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 60px; }
+  .vertical-mini-menu ul li.current {
+    border-left: 5px solid #2A70B6;
+    padding-left: 10px; }
+  .vertical-mini-menu.contained {
+    position: absolute; }
+
+.horizontal-mini-menu {
+  position: fixed;
+  display: block;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 20px;
+  width: 100%; }
+  .horizontal-mini-menu ul li.current {
+    border-top: 5px solid #2A70B6; }
+  .horizontal-mini-menu.left {
+    text-align: left; }
+  .horizontal-mini-menu.right {
+    text-align: right; }
+  .horizontal-mini-menu.center {
+    text-align: center; }
+  .horizontal-mini-menu.contained {
+    position: absolute; }

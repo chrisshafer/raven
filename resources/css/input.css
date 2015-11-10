@@ -1,0 +1,148 @@
+.input-group {
+  margin-top: 10px; }
+  .input-group label {
+    display: block;
+    font-size: 15px; }
+  .input-group input {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #414141;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 2px;
+    line-height: 24px;
+    color: #B2BABB;
+    margin-bottom: 25px; }
+    .input-group input:focus {
+      outline: 0;
+      border-bottom: 2px solid #2A70B6; }
+    .input-group input.placeholder {
+      color: #576263; }
+    .input-group input:-moz-placeholder {
+      color: #576263; }
+    .input-group input::-moz-placeholder {
+      color: #576263; }
+    .input-group input::-webkit-input-placeholder {
+      color: #576263; }
+  .input-group.positive input {
+    border-bottom: 2px solid #27aca1; }
+    .input-group.positive input:focus {
+      outline: 0;
+      border-bottom: 2px solid #22978e; }
+  .input-group.negative input {
+    border-bottom: 2px solid #d7432c; }
+    .input-group.negative input:focus {
+      outline: 0;
+      border-bottom: 2px solid #c43b25; }
+  .input-group.information input {
+    border-bottom: 2px solid #2A70B6; }
+    .input-group.information input:focus {
+      outline: 0;
+      border-bottom: 2px solid #2563a1; }
+  .input-group.neutral input {
+    border-bottom: 2px solid #5C6067; }
+    .input-group.neutral input:focus {
+      outline: 0;
+      border-bottom: 2px solid #50535a; }
+  .input-group.pillbox {
+    height: 30px;
+    background-color: #252525;
+    border-radius: 5px;
+    border: 1px solid #2d2d2d;
+    display: flex;
+    flex-direction: row; }
+    .input-group.pillbox label {
+      display: inline-flex;
+      background-color: #2d2d2d;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom: none;
+      line-height: 30px;
+      padding: 0px 10px 0px 7px;
+      font-weight: 400;
+      font-size: 18px;
+      flex-grow: 0; }
+      .input-group.pillbox label .fa {
+        line-height: 30px; }
+    .input-group.pillbox input {
+      display: inline-flex;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 3px;
+      line-height: 30px;
+      padding: 0px 0px 0px 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom: none;
+      width: 10%;
+      flex-grow: 1; }
+    .input-group.pillbox.positive {
+      border: 1px solid #27aca1; }
+      .input-group.pillbox.positive label {
+        color: #27aca1; }
+      .input-group.pillbox.positive input:focus {
+        outline: 0;
+        border-bottom: none; }
+    .input-group.pillbox.negative {
+      border: 1px solid #d7432c; }
+      .input-group.pillbox.negative label {
+        color: #d7432c; }
+      .input-group.pillbox.negative input:focus {
+        outline: 0;
+        border-bottom: none; }
+    .input-group.pillbox.information {
+      border: 1px solid #2A70B6; }
+      .input-group.pillbox.information label {
+        color: #2A70B6; }
+      .input-group.pillbox.information input:focus {
+        outline: 0;
+        border-bottom: none; }
+    .input-group.pillbox.neutral {
+      border: 1px solid #5C6067; }
+      .input-group.pillbox.neutral label {
+        color: #5C6067; }
+      .input-group.pillbox.neutral input:focus {
+        outline: 0;
+        border-bottom: none; }
+  .input-group.ex-pillbox {
+    height: 60px;
+    margin: 3px 5px 10px 5px; }
+    .input-group.ex-pillbox label {
+      top: -10px;
+      font-size: 15px; }
+    .input-group.ex-pillbox input {
+      margin: 5px 0 0 -5px;
+      display: inline-block;
+      width: auto;
+      line-height: 30px;
+      padding: 0px 0px 0px 5px;
+      border-radius: 5px;
+      border: 1px solid #2d2d2d;
+      border-bottom: none;
+      background-color: #252525;
+      width: 100%; }
+      .input-group.ex-pillbox input:focus {
+        outline: 0;
+        border: 1px solid #2A70B6; }
+    .input-group.ex-pillbox.positive input {
+      border: 1px solid #27aca1; }
+      .input-group.ex-pillbox.positive input:focus {
+        outline: 0;
+        border: 1px solid #35d1c4; }
+    .input-group.ex-pillbox.negative input {
+      border: 1px solid #d7432c; }
+      .input-group.ex-pillbox.negative input:focus {
+        outline: 0;
+        border: 1px solid #df6957; }
+    .input-group.ex-pillbox.information input {
+      border: 1px solid #2A70B6; }
+      .input-group.ex-pillbox.information input:focus {
+        outline: 0;
+        border: 1px solid #4089d3; }
+    .input-group.ex-pillbox.neutral input {
+      border: 1px solid #5C6067; }
+      .input-group.ex-pillbox.neutral input:focus {
+        outline: 0;
+        border: 1px solid #747982; }

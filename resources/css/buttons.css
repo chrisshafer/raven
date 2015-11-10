@@ -1,0 +1,53 @@
+button {
+  background-color: #252525;
+  border: 1px solid #B2BABB;
+  border-radius: 100px;
+  padding: 0px 14px 0px 14px;
+  margin: 5px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #B2BABB;
+  text-transform: uppercase; }
+  button:focus {
+    outline: 0; }
+  button:hover {
+    background-color: #181818;
+    cursor: pointer; }
+  button.rounded {
+    border-radius: 5px; }
+  button.large {
+    border: 2px solid #B2BABB;
+    font-size: 20px;
+    line-height: 40px; }
+  button.small {
+    border: 1px solid #B2BABB;
+    font-size: 12px;
+    line-height: 20px; }
+  button.information {
+    border-color: #2A70B6;
+    background-color: #2A70B6;
+    color: #f4f4f4; }
+    button.information:hover {
+      background-color: #225c95;
+      border-color: #225c95; }
+  button.negative {
+    border-color: #d7432c;
+    background-color: #d7432c;
+    color: #f4f4f4; }
+    button.negative:hover {
+      background-color: #b73723;
+      border-color: #b73723; }
+  button.positive {
+    border-color: #27aca1;
+    background-color: #27aca1;
+    color: #f4f4f4; }
+    button.positive:hover {
+      background-color: #1f8b82;
+      border-color: #1f8b82; }
+  button.neutral {
+    border-color: #5C6067;
+    background-color: #5C6067;
+    color: #f4f4f4; }
+    button.neutral:hover {
+      background-color: #494c51;
+      border-color: #494c51; }
