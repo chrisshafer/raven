@@ -3,15 +3,37 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="main.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/resources/css/main.css"/>
 </head>
 <body>
 
-    <div class="container centered narrow">
+    <div class="container centered">
         <h1>Raven Framework</h1>
         <p>
             Raven is a responsive framework designed to provide a flatter and eye friendly experience.
         </p>
+
+        <h2>Browser Support</h2>
+        <div class="card information">
+            <p>
+                Lets get this out of the way. The following browsers have been tested for support of raven.
+            </p>
+        </div>
+        <div class="card inverse">
+            <div class="row browser-demo">
+                <div class="column"><img src="https://github.com/alrra/browser-logos/blob/master/chrome/chrome_128x128.png?raw=true"></div>
+                <div class="column"><img src="https://github.com/alrra/browser-logos/blob/master/chromium/chromium_128x128.png?raw=true"></div>
+                <div class="column"><img src="https://github.com/alrra/browser-logos/blob/master/firefox/firefox_128x128.png?raw=true"></div>
+            </div>
+            <div class="card information">
+                <p>
+                    As you can see, this list doesn't include IE, or safari. They may work, they may not.
+                </p>
+            </div>
+        </div>
+
         <h2>Headings</h2>
         <div class="card inverse">
             <h1>Heading</h1>
@@ -143,15 +165,15 @@
         <div class="card inverse">
             <div class="input-group">
                 <label>First Name</label>
-                <input type="text" placeholder="Alan" />
+                <input type="text" placeholder="" />
             </div>
             <div class="input-group">
                 <label>Last Name</label>
-                <input type="text" placeholder="Turing"/>
+                <input type="text" placeholder="placeholder"/>
             </div>
             <div class="input-group negative">
                 <label>Invalid Input</label>
-                <input type="text" placeholder="Hades"/>
+                <input type="text" placeholder=""/>
             </div>
             <div class="input-group positive">
                 <label>Valid Input</label>
@@ -159,17 +181,39 @@
             </div>
         </div>
         <div class="card">
-            <div class="input-group pillbox">
+
+            <div class="input-group ex-pillbox">
                 <label>First Name</label>
                 <input type="text" placeholder="Alan" />
             </div>
-            <div class="input-group pillbox">
+            <div class="input-group ex-pillbox">
                 <label>Last Name</label>
                 <input type="text" placeholder="Turing"/>
+            </div>
+            <div class="input-group ex-pillbox negative">
+                <label>Invalid Input</label>
+                <input type="text" placeholder="Hades"/>
+            </div>
+            <div class="input-group ex-pillbox positive">
+                <label>Valid Input</label>
+                <input type="text" placeholder="Zeus"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="input-group pillbox">
+                <label>First Name</label>
+                <input type="text" placeholder="" />
+            </div>
+            <div class="input-group pillbox">
+                <label><i class="fa fa-search"></i></label>
+                <input type="text" placeholder="placeholder"/>
             </div>
             <div class="input-group pillbox information">
                 <label>Selected Input</label>
                 <input type="text" placeholder="Hades"/>
+            </div>
+            <div class="card plain information">
+                Because css is shit you will have to trigger active pillboxes with javascript
             </div>
             <div class="input-group pillbox negative">
                 <label>Invalid Input</label>
@@ -181,6 +225,284 @@
             </div>
         </div>
 
+        <h2>Menus</h2>
+
+        <div class="card information">
+            <p>
+                Everyone loves navigation right ? Here are a few of the available options in raven.
+            </p>
+        </div>
+        <div class="card inverse min-menu-vertical-example">
+            <span class="title">Minimalistic</span>
+            <p>
+                This is a menu meant for icons only.
+                This example is using font-awesome icons, you can find them
+                <a href="http://fortawesome.github.io/Font-Awesome/">here</a>
+            </p>
+            <div class="vertical-mini-menu contained">
+                <ul>
+                    <li><i class="fa fa-line-chart"></i></li>
+                    <li><i class="fa fa-cloud"></i></li>
+                    <li  class="current"><i class="fa fa-bars"></i></li>
+                    <li><i class="fa fa-headphones"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card inverse min-menu-horizontal-example">
+            <div class="horizontal-mini-menu contained">
+                <ul>
+                    <li><i class="fa fa-line-chart"></i></li>
+                    <li><i class="fa fa-cloud"></i></li>
+                    <li  class="current"><i class="fa fa-bars"></i></li>
+                    <li><i class="fa fa-headphones"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card min-menu-horizontal-example">
+            <div class="horizontal-mini-menu contained right">
+                <ul>
+                    <li><i class="fa fa-line-chart"></i></li>
+                    <li  class="current"><i class="fa fa-cloud"></i></li>
+                    <li><i class="fa fa-bars"></i></li>
+                    <li><i class="fa fa-headphones"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card inverse min-menu-horizontal-example">
+            <div class="horizontal-mini-menu contained center">
+                <ul>
+                    <li  class="current"><i class="fa fa-line-chart"></i></li>
+                    <li><i class="fa fa-cloud"></i></li>
+                    <li><i class="fa fa-bars"></i></li>
+                    <li><i class="fa fa-headphones"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Lists</h2>
+
+        <div class="card information">
+            <p>
+                Yea... they're lists
+            </p>
+        </div>
+        <div class="card inverse">
+            <div class="row">
+                <div class="column order-1">
+                    <ul>
+                        <li>Carrots</li>
+                        <li>Peas</li>
+                        <li>Beets</li>
+                        <li>Celery</li>
+                        <li>Green Beans</li>
+                    </ul>
+                </div>
+                <div class="column order-2">
+                    <ol>
+                        <li>Carrots</li>
+                        <li>Peas</li>
+                        <li>Beets</li>
+                        <li>Celery</li>
+                        <li>Green Beans</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <h2>Grid</h2>
+        <div class="card information">
+            <p>
+                Ravens currently unresponsive "grid" is a piece of shit based on flexbox, and a work in progress.
+            </p>
+        </div>
+        <div class="card inverse">
+            <div class="row">
+                <div class="demo-flex column order-1">
+                    .column .order-1
+                </div>
+                <div class="demo-flex column order-2">
+                    .column .order-2
+                </div>
+            </div>
+            <div class="row">
+                <div class="demo-flex column order-2">
+                    .column .order-2
+                </div>
+                <div class="demo-flex column order-1">
+                    .column .order-1
+                </div>
+                <div class="demo-flex column order-3">
+                    .column .order-3
+                </div>
+            </div>
+            <div class="row">
+                <div class="demo-flex column order-1">
+                    .column .order-1
+                </div>
+                <div class="demo-flex column order-3">
+                    .column .order-3
+                </div>
+                <div class="demo-flex column order-2 grow-2">
+                    .column .order-2 .grow-2
+                </div>
+            </div>
+            <div class="row">
+                <div class="demo-flex column order-1">
+                    .column .order-1
+                </div>
+                <div class="demo-flex column order-2">
+                    .column .order-2
+                </div>
+                <div class="demo-flex column order-3">
+                    .column .order-3
+                </div>
+                <div class="demo-flex column order-4">
+                    .column .order-4
+                </div>
+            </div>
+            <div class="card information thin">
+                <p>
+                    Go crazy !
+                </p>
+            </div>
+            <div class="row">
+                <div class="demo-flex column">
+                    .column
+                </div>
+                <div class="demo-flex column grow-3">
+                    .column .grow-3
+                </div>
+                <div class="demo-flex column">
+                    .column
+                </div>
+                <div class="demo-flex column grow-30">
+                    .column .grow-30
+                </div>
+            </div>
+            <div class="row">
+                <div class="demo-flex column basis-4">
+                    No
+                </div>
+                <div class="demo-flex column basis-4">
+                    Order
+                </div>
+                <div class="demo-flex column basis-4">
+                    There's
+                </div>
+                <div class="demo-flex column basis-4">
+                    Here
+                </div>
+            </div>
+            <div class="card information thin">
+                <p>
+                    By default flex-box is.. flexible, but you can be strict when it comes to sizing.
+                    If you are looking for a more traditional grid experience be strict with your columns!
+                    You will also need to define the row as strict. Sizes range from 1-12
+                </p>
+            </div>
+            <div class="row strict">
+                <div class="column strict-2">
+                    <div class="demo-strict">
+                        .column .strict-2
+                    </div>
+                </div>
+                <div class="column strict-2">
+                    <div class="demo-strict">
+                        .column .strict-2
+                    </div>
+                </div>
+                <div class="column strict-2">
+                    <div class="demo-strict">
+                        .column .strict-2
+                    </div>
+                </div>
+                <div class="column strict-2">
+                    <div class="demo-strict">
+                        .column .strict-2
+                    </div>
+                </div>
+            </div>
+            <div class="row strict">
+                <div class="column strict-3">
+                    <div class="demo-strict">
+                        .column .strict-3
+                    </div>
+                </div>
+                <div class="column strict-3">
+                    <div class="demo-strict">
+                        .column .strict-3
+                    </div>
+                </div>
+                <div class="column strict-md-3">
+                    <div class="demo-strict">
+                        .column .strict-md-3
+                    </div>
+                </div>
+                <div class="column strict-lg-3">
+                    <div class="demo-strict">
+                        .column .strict-lg-3
+                    </div>
+                </div>
+            </div>
+            <div class="row strict">
+                <div class="column strict-3">
+                    <div class="demo-strict">
+                        .column .strict-3
+                    </div>
+                </div>
+                <div class="column strict-3">
+                    <div class="demo-strict">
+                        .column .strict-3
+                    </div>
+                </div>
+                <div class="column strict-3">
+                    <div class="demo-strict">
+                        .column .strict-3
+                    </div>
+                </div>
+                <div class="column strict-3">
+                    <div class="demo-strict">
+                        .column .strict-3
+                    </div>
+                </div>
+            </div>
+            <div class="row strict">
+                <div class="column strict-md-6">
+                    <div class="demo-strict">
+                        .column .strict-md-6
+                        <div class="row strict">
+                            <div class="column strict-6">
+                                <div class="demo-strict">
+                                    .column .strict-6
+                                </div>
+                            </div>
+                            <div class="column strict-6">
+                                <div class="demo-strict">
+                                    .column .strict-6
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column strict-md-6">
+                    <div class="demo-strict">
+                        .column .strict-md-6
+                        <div class="row strict">
+                            <div class="column strict-4">
+                                <div class="demo-strict">
+                                    .column .strict-4
+                                </div>
+                            </div>
+                            <div class="column strict-8">
+                                <div class="demo-strict">
+                                    .column .strict-8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

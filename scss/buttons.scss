@@ -2,7 +2,7 @@
 @import "mixins";
 
 $default-border: $body-font;
-$indicator-button: #FFFFFF;
+$indicator-button: #f4f4f4;
 
 @mixin colored-button($color){
   border-color: $color;

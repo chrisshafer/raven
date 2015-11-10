@@ -14,10 +14,10 @@ $indicator-text: #FFFFFF;
   }
 }
 @mixin indicated-pillbox($color){
-  border: 2px solid $color;
+  border: 1px solid $color;
+
   label{
-    background-color: $color;
-    color: $indicator-text;
+    color: $color;
   }
   input{
     &:focus{
@@ -27,11 +27,24 @@ $indicator-text: #FFFFFF;
   }
 }
 
+@mixin indicated-ex-pillbox($color){
+
+  input{
+    border: 1px solid $color;
+
+    &:focus{
+      outline: 0;
+      border: 1px solid lighten($color,10%);
+
+    }
+  }
+}
+
 .input-group{
   margin-top: 10px;
   label{
     display: block;
-    font-size: 14px;
+    font-size: 15px;
   }
   input{
     display: block;
@@ -50,7 +63,8 @@ $indicator-text: #FFFFFF;
       border-bottom: 2px solid $information;
     }
     @include placeholder{
-      color: darken($body-font,15%);
+      color: darken($body-font,35%);
+
     }
   }
 
@@ -73,31 +87,38 @@ $indicator-text: #FFFFFF;
     height: $pill-height;
     background-color: darken($card-background, 11%) ;
     border-radius: $pill-radius;
-    border: 2px solid $background;
-    margin: 10px 5px 10px 5px;
+    border: 1px solid $background;
+    display: flex;
+    flex-direction: row;
     label{
-      display: inline-block;
-      width: auto;
+      display: inline-flex;
       background-color: $background;
-      border-top-left-radius: $pill-radius - 4px;
-      border-bottom-left-radius: $pill-radius - 4px;
+      border-top-left-radius: $pill-radius ;
+      border-bottom-left-radius: $pill-radius ;
       border-bottom: none;
       line-height: $pill-height;
       padding: 0px 10px 0px 7px;
       font-weight: 400;
       font-size: 18px;
+      flex-grow: 0;
+      .fa{
+        line-height: $pill-height;
+      }
     }
 
     input{
-      margin-left: -5px;
-      display: inline-block;
-      width: auto;
+      display: inline-flex;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 3px;
+
       line-height: $pill-height;
       padding: 0px 0px 0px 5px;
       border-top-right-radius: $pill-radius;
       border-bottom-right-radius: $pill-radius;
       border-bottom: none;
-
+      width: 10%;
+      flex-grow: 1;
     }
     &.positive{
       @include indicated-pillbox($positive);
@@ -110,6 +131,47 @@ $indicator-text: #FFFFFF;
     }
     &.neutral{
       @include indicated-pillbox($neutral);
+    }
+  }
+
+  &.ex-pillbox{ // somethings fucky
+    $pill-height: 30px;
+    $pill-radius: 5px;
+    height: $pill-height *2;
+
+    margin: 3px 5px 10px 5px;
+    label{
+      top: -10px;
+      font-size: 15px;
+    }
+
+    input{
+      margin: 5px 0 0 -5px;
+      display: inline-block;
+      width: auto;
+      line-height: $pill-height;
+      padding: 0px 0px 0px 5px;
+      border-radius: $pill-radius;
+      border: 1px solid $background;
+      border-bottom: none;
+      background-color: darken($card-background, 11%) ;
+      width: 100%;
+      &:focus{
+        outline: 0;
+        border: 1px solid $information;
+      }
+    }
+    &.positive{
+      @include indicated-ex-pillbox($positive);
+    }
+    &.negative{
+      @include indicated-ex-pillbox($negative);
+    }
+    &.information{
+      @include indicated-ex-pillbox($information);
+    }
+    &.neutral{
+      @include indicated-ex-pillbox($neutral);
     }
   }
 }

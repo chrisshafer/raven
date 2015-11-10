@@ -2,6 +2,7 @@
 @import "mixins";
 
 .card{
+  position: relative;
   background: $card-background;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
@@ -15,6 +16,16 @@
     font-weight: bold;
   }
 
+  &.thin{
+    padding: 10px 10px 10px 10px;
+    p {
+      margin: 0;
+    }
+
+  }
+  &.plain{
+    background-color: $background ;
+  }
   &.inverse{
     background-color: darken($card-background, 11%) ;
   }

@@ -1,11 +1,12 @@
 @import "colors";
+
 .color-swatch{
   width: 140px;
   height: 140px;
   border-radius: 5px;
   display: inline-block;
   margin: 9px;
-  color: white;
+  color: #f4f4f4;
   font-weight: bold;
   padding: 10px;
 
@@ -34,5 +35,38 @@
   }
   &.font-color{
     background-color: $body-font;
+  }
+}
+
+.min-menu-vertical-example{
+  padding-left:75px !important;
+  height: 200px;
+}
+
+.min-menu-horizontal-example{
+  padding-top:45px !important;
+}
+.demo-flex{
+  min-height: 20px;
+  border: 2px solid $card-background;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+}
+.demo-strict{
+  min-height: 20px;
+  border: 2px solid $card-background;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+}
+.browser-demo{
+  .column {
+    img {
+      padding-top: 5px;
+      display: inherit;
+      height: 100px;
+      margin: auto;
+    }
   }
 }
