@@ -3,6 +3,7 @@
 .container{
   width: 100%;
   margin-bottom: 50px;
+  max-width: 64em;
   &.centered{
     margin-left: auto;
     margin-right: auto;
@@ -11,6 +12,6 @@
     max-width: 48em;
   }
   &.wide{
-    max-width: 64em;
+    max-width: 82.5em;
   }
 }

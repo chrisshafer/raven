@@ -88,10 +88,10 @@ $indicator-text: #FFFFFF;
     background-color: darken($card-background, 11%) ;
     border-radius: $pill-radius;
     border: 1px solid $background;
-    margin: 10px 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
     label{
-      display: inline-block;
-      width: auto;
+      display: inline-flex;
       background-color: $background;
       border-top-left-radius: $pill-radius ;
       border-bottom-left-radius: $pill-radius ;
@@ -100,18 +100,25 @@ $indicator-text: #FFFFFF;
       padding: 0px 10px 0px 7px;
       font-weight: 400;
       font-size: 18px;
+      flex-grow: 0;
+      .fa{
+        line-height: $pill-height;
+      }
     }
 
     input{
-      margin-left: -5px;
-      display: inline-block;
-      width: auto;
+      display: inline-flex;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 3px;
+
       line-height: $pill-height;
       padding: 0px 0px 0px 5px;
       border-top-right-radius: $pill-radius;
       border-bottom-right-radius: $pill-radius;
       border-bottom: none;
-
+      width: 10%;
+      flex-grow: 1;
     }
     &.positive{
       @include indicated-pillbox($positive);
