@@ -5,7 +5,7 @@ var plugins = require('gulp-load-plugins')({
 });
 
 var workingDir = "./resources";
-var developmentDir = "./.temp/raven-example";
+var developmentDir = "./";
 var bowerFilter = plugins.filter(['**/*.{min.js,min.css,css,js}']);
 
 gulp.task('preview', function() {
