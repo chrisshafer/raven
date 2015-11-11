@@ -1,0 +1,52 @@
+.color-swatch {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 9px;
+  color: #f4f4f4;
+  font-weight: bold;
+  padding: 10px; }
+  .color-swatch.inverse-font {
+    color: #2d2d2d; }
+  .color-swatch.positive {
+    background-color: #27aca1; }
+  .color-swatch.negative {
+    background-color: #d7432c; }
+  .color-swatch.information {
+    background-color: #2A70B6; }
+  .color-swatch.neutral {
+    background-color: #5C6067; }
+  .color-swatch.background-color {
+    background-color: #2d2d2d; }
+  .color-swatch.card-color {
+    background-color: #414141; }
+  .color-swatch.font-color {
+    background-color: #B2BABB; }
+
+.min-menu-vertical-example {
+  padding-left: 75px !important;
+  height: 200px; }
+
+.min-menu-horizontal-example {
+  padding-top: 45px !important; }
+
+.demo-flex {
+  min-height: 20px;
+  border: 2px solid #414141;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px; }
+
+.demo-strict {
+  min-height: 20px;
+  border: 2px solid #414141;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px; }
+
+.browser-demo .column img {
+  padding-top: 5px;
+  display: inherit;
+  height: 100px;
+  margin: auto; }
