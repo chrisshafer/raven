@@ -38,7 +38,7 @@ gulp.task("scss", function() {
 gulp.task("bowerbuild", function() {
     return gulp.src('./scss/**/*.scss')
         .pipe(plugins.sass().on('error', plugins.sass.logError))
-        .pipe(gulp.dest(developmentDir + "/css"));
+        .pipe(gulp.dest("./css"));
 });
 
 gulp.task("resources", function() {
