@@ -35,6 +35,12 @@ gulp.task("scss", function() {
         .pipe(gulp.dest(developmentDir + "/resources/css"));
 });
 
+gulp.task("bowerbuild", function() {
+    return gulp.src('./scss/**/*.scss')
+        .pipe(plugins.sass().on('error', plugins.sass.logError))
+        .pipe(gulp.dest(developmentDir + "/css"));
+});
+
 gulp.task("resources", function() {
     return gulp.src('./resources/**/*.css')
         .pipe(plugins.sass().on('error', plugins.sass.logError))
